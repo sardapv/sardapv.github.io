@@ -22,10 +22,15 @@ jobs:
         with:
           node-version: 16
 
+      - name: Configure Git
+        run: |
+          git config user.email "sardapranav1@gmail.com"
+          git config user.name "sardapv"
+
       - name: Install dependencies
         run: npm install
 
       - name: Build SvelteKit app
-        run: npm run deploy -u "sardapv <sardapranav1@gmail.com>"
+        run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
