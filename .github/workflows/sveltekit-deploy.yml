@@ -5,9 +5,7 @@ on:
     branches:
       - main
 permissions:
-  contents: read
-  packages: write
-  deployments: write
+  contents: write
 
 jobs:
   deploy:
@@ -22,15 +20,15 @@ jobs:
         with:
           node-version: 16
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "sardapranav1@gmail.com"
-          git config --global user.name "sardapv"
-
       - name: Install dependencies
         run: npm install
 
       - name: Build SvelteKit app
         run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy
+        # https://github.com/JamesIves/github-pages-deploy-action
+        uses: JamesIves/github-pages-deploy-action@4
+        with:
+          branch: gh-pages
+          folder: build
