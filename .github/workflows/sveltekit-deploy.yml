@@ -5,9 +5,9 @@ on:
     branches:
       - main
 permissions:
-    contents: read
-    packages: write
-    deployments: write      
+  contents: read
+  packages: write
+  deployments: write
 
 jobs:
   deploy:
@@ -26,4 +26,6 @@ jobs:
         run: npm install
 
       - name: Build SvelteKit app
-        run: npm run deploy
+        run: npm run deploy -u "sardapv <sardapranav1@gmail.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
