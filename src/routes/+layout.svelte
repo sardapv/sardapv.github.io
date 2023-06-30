@@ -10,9 +10,9 @@
 			<span class="font-semibold text-2xl text-sky-500 hidden sm:block">Pranav Sarda</span>
 		</a>
 		<nav class="h-16 flex items-center gap-x-4 text-sm">
-			<NavLink route="/non">About</NavLink>
-			<NavLink route="/non">Experience</NavLink>
-			<NavLink route="/non">Projects</NavLink>
+			<NavLink route="">About</NavLink>
+			<NavLink route="">Experience</NavLink>
+			<NavLink route="">Projects</NavLink>
 			<a
 				href="/contact"
 				class="font-medium text-pink-600 hover:text-purple-700 transition-all ease-in duration-200"
