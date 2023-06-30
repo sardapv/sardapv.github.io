@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Build SvelteKit app
-        run: npm run deploy
+        run: npm run build
 
       - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
