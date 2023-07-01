@@ -30,8 +30,7 @@
 					I'm also a newbie content creator on <Link src="https://www.youtube.com/@pranavcodesweb"
 						>Youtube</Link
 					>, diving into the world of animation. Check out my channel for exciting content.
-					Ocassionally I write blogs on <Link src="https://www.youtube.com/@pranavcodesweb"
-						>Hashnode</Link
+					Ocassionally I write blogs on <Link src="https://pranavsarda.hashnode.dev/">Hashnode</Link
 					> as well.
 
 					<br /><br />
