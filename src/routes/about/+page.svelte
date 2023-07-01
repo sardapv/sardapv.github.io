@@ -66,7 +66,7 @@
 					src="/images/me.jpg"
 					alt="me"
 					decoding="async"
-					class="rounded-2xl rotate-3 object-cover shadow-sm"
+					class="rounded-2xl rotate-3 object-cover shadow-sm bg-slate-800"
 					height="500"
 					width="350"
 				/>
