@@ -4,7 +4,9 @@
 </script>
 
 <div class="h-full w-full flex flex-col">
-	<aside class="flex justify-between px-4 items-center">
+	<aside
+		class="flex justify-between px-4 items-center sticky top-0 bg-white lg:px-24 md:px-10 p-2 z-50"
+	>
 		<a class="flex items-center" href="/">
 			<img src="/images/logo.svg" alt="logo" class="h-10 sm:h-12 sm:mr-2" />
 			<span class="font-semibold text-2xl text-sky-500 hidden sm:block">Pranav Sarda</span>
@@ -23,7 +25,7 @@
 	<div class="flex-grow">
 		<slot><!-- optional fallback --></slot>
 	</div>
-	<footer class="h-10 bg-zinc-100 text-xs grid place-content-center text-zinc-600">
+	<footer class="h-10 bg-zinc-100 text-xs grid place-content-center text-zinc-600 p-4">
 		Made with Svelte, TailwindCSS & Custom Graphics ❤️
 	</footer>
 </div>

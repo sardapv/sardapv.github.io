@@ -14,7 +14,7 @@
 			> aficionado and a
 			<Header gradientMode="gray">Curious</Header> Learner
 		</div>
-		<p class="pt-6 text-xs font-poppins font-normal text-zinc-500 sm:text-sm">
+		<p class="pt-6 text-xs font-poppins font-normal text-slate-500 sm:text-sm">
 			Hi 👋, Thanks for visiting! I am currently working as a frontend lead at Open, India's 100th
 			unicorn and a Fintech Startup 🦄<br />
 		</p>
