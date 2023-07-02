@@ -2,16 +2,14 @@
 	import Link from 'components/link.svelte';
 </script>
 
-<div
-	class="p-3 flex flex-col items-center h-full mx-[4vw] md:mx-[10vw] 2xl:mx-[20vw] justify-center"
->
+<div class="p-3 flex flex-col items-center mx-[4vw] md:mx-[10vw] 2xl:mx-[20vw] justify-center">
 	<div class="max-w-2xl lg:max-w-full">
 		<div class="grid lg:grid-cols-2 lg:grid-rows-[auto_1fr] gap-12">
 			<div class="lg:row-span-2">
-				<h1 class="text-4xl font-semibold font-gilroy">
+				<h1 class="text-4xl font-semibold font-gilroy text-black dark:text-slate-50">
 					Hey 👋, I am Pranav. I live in Bengaluru, the Silicon Valley of India 🇮🇳
 				</h1>
-				<p class="text-sm mt-5 font-normal text-slate-600">
+				<p class="text-sm mt-5 font-normal">
 					After graduating in 2018 from <Link
 						src="https://en.wikipedia.org/wiki/College_of_Engineering,_Pune">COEP, Pune</Link
 					>; I began my career at a product-oriented MNC. Fast forward to 2021, I shifted to
@@ -49,18 +47,22 @@
 						></Link
 					>
 				</p>
-				<hr class="bg-zinc-300 border-0 h-px my-4" />
+				<hr class="bg-zinc-300 dark:bg-slate-700 border-0 h-px my-4" />
 				<div class="text-sm font-normal">
-					<h1 class="text-3xl font-semibold font-gilroy my-4">Tech I know 👨🏻‍💻</h1>
-					<p class="text-slate-600">
-						HTML, CSS/SCSS, JavaScript, Typescript , Angular, Sveltekit, StencilJs, Tailwind
-					</p>
-					<hr class="bg-zinc-300 border-0 h-px my-4" />
-					<h1 class="text-3xl font-semibold font-gilroy my-4">Tech I am learning 📚</h1>
-					<p class="text-slate-600">React.js, Solid.js</p>
-					<hr class="bg-zinc-300 border-0 h-px my-4" />
-					<h1 class="text-3xl font-semibold font-gilroy my-4">Non-Tech I am learning 🛸</h1>
-					<p class="text-slate-600">3D animation and Tools, AI tools</p>
+					<h1 class="text-3xl font-semibold font-gilroy my-4 text-black dark:text-slate-50">
+						Tech I know 👨🏻‍💻
+					</h1>
+					<p>HTML, CSS/SCSS, JavaScript, Typescript , Angular, Sveltekit, StencilJs, Tailwind</p>
+					<hr class="bg-zinc-300 dark:bg-slate-700 border-0 h-px my-4" />
+					<h1 class="text-3xl font-semibold font-gilroy my-4 text-black dark:text-slate-50">
+						Tech I am learning 📚
+					</h1>
+					<p>React.js, Solid.js</p>
+					<hr class="bg-zinc-300 dark:bg-slate-700 border-0 h-px my-4" />
+					<h1 class="text-3xl font-semibold font-gilroy my-4 text-black dark:text-slate-50">
+						Non-Tech I am learning 🛸
+					</h1>
+					<p>3D animation and Tools, AI tools</p>
 				</div>
 			</div>
 			<div class="px-6 pt-4 lg:pt-20 flex justify-center order-first lg:order-last">

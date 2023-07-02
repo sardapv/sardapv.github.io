@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
@@ -7,6 +7,9 @@ export default {
 			fontFamily: {
 				gilroy: ['Gilroy-Bold'],
 				poppins: ['Poppins']
+			},
+			colors: {
+				dark: '#1f2028'
 			}
 		}
 	},
