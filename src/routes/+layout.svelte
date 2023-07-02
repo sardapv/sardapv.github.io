@@ -16,7 +16,7 @@
 <div class="h-full w-full flex flex-col">
 	<aside class="flex justify-between px-4 items-center lg:px-24 md:px-10 p-2 z-50">
 		<a class="flex items-center" href="/">
-			<img src="/images/logo.svg" alt="logo" class="h-10 sm:h-12 sm:mr-2" />
+			<img src="/images/logo.svg" alt="logo" class="h-10 w-20 sm:h-12 sm:mr-2" />
 			<span class="font-semibold text-2xl text-sky-500 hidden sm:block">Pranav Sarda</span>
 		</a>
 
