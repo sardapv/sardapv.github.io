@@ -2,12 +2,28 @@
 	import NavLink from 'components/nav-link.svelte';
 	import '../app.css';
 	import Toggle from 'components/toggle.svelte';
+	import { onMount } from 'svelte';
+	let isDarkEnabled = false;
+	onMount(() => {
+		if (
+			localStorage.theme === 'dark' ||
+			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+		) {
+			isDarkEnabled = true;
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+	});
 
 	const toggleTheme = (event: CustomEvent<boolean>) => {
 		const dark = event.detail;
+
 		if (dark) {
+			localStorage.theme = 'dark';
 			document.documentElement.classList.add('dark');
 		} else {
+			localStorage.theme = 'light';
 			document.documentElement.classList.remove('dark');
 		}
 	};
@@ -21,7 +37,7 @@
 		</a>
 
 		<nav class="h-16 flex items-center gap-x-4 text-sm">
-			<Toggle on:change={toggleTheme} />
+			<Toggle on:change={toggleTheme} bind:isChecked={isDarkEnabled} />
 
 			<NavLink route="/about">About</NavLink>
 			<NavLink route="/experience">Experience</NavLink>

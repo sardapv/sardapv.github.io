@@ -2,16 +2,16 @@
 	import { createEventDispatcher } from 'svelte';
 
 	const dispatch = createEventDispatcher();
-
+	export let isChecked = false;
 	function handleChange(event: Event) {
 		const checkbox = event.target as HTMLInputElement;
-		const isChecked = checkbox.checked;
+		isChecked = checkbox.checked;
 		dispatch('change', isChecked);
 	}
 </script>
 
 <div class="toggleWrapper">
-	<input type="checkbox" class="dn" id="dn" on:change={handleChange} />
+	<input type="checkbox" class="dn" id="dn" on:change={handleChange} bind:checked={isChecked} />
 	<label for="dn" class="toggle">
 		<span class="toggle__handler">
 			<span class="crater crater--1" />
