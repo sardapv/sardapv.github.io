@@ -15,7 +15,8 @@
 					>; I began my career at a product-oriented MNC. Fast forward to 2021, I shifted to
 					Bengaluru & I took a detour from full stack development and discovered my true calling in
 					frontend. Now, I'm on an epic adventure of crafting pixel-perfect UI designs and obsessing
-					over user experience.
+					over user experience. Currently leading frontend at India's 100th Unicorn and Fintech
+					Startup: <Link src="https://open.money">Open Money</Link>
 					<br /><br />
 
 					I've worked with Angular, Svelte, StencilJs, and my favorite CSS framework, Tailwind. I
@@ -28,7 +29,7 @@
 					I'm also a newbie content creator on <Link src="https://www.youtube.com/@pranavcodesweb"
 						>Youtube</Link
 					>, diving into the world of animation. Check out my channel for exciting content.
-					Ocassionally I write blogs on <Link src="https://pranavsarda.hashnode.dev/">Hashnode</Link
+					Occasionally I write blogs on <Link src="https://pranavsarda.hashnode.dev/">Hashnode</Link
 					> as well.
 
 					<br /><br />
